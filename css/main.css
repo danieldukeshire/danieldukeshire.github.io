@@ -104,11 +104,15 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: #191A3F;
+    color: #862121;
 }
 
 a:focus {
     outline: none;
+}
+
+a:visited {
+    color: #862121;
 }
 
 
@@ -203,13 +207,14 @@ p.lead {
     color: #0D0A0B;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     p.lead {
         font-size: 1.8rem;
     }
 }
 
 em, i, strong, b {
+    font-size: 1.5rem;
     font-size: inherit;
     line-height: inherit;
     font-style: normal;
@@ -337,7 +342,7 @@ hr {
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -1263,6 +1268,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .wide {
     max-width: 1400px;
+}
+
+.mid {
+    max-width: 1000px;
 }
 
 .narrow {
@@ -2268,6 +2277,18 @@ html.no-csstransitions .home-content__main {
     top: .3rem;
 }
 
+.timeline__small__bullet {
+    background: #0D0A0B;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    margin-left: -0.75rem;
+    box-shadow: 0 0 0 9px #E9E9E9;
+    position: absolute;
+    left: 2rem;
+    top: .3rem;
+}
+
 .timeline__header .timeline__timeframe {
     font-size: 1.4rem;
     line-height: 1.5;
@@ -2629,9 +2650,9 @@ html.no-csstransitions .home-content__main {
 
 .s-testimonials {
     background-color: #0D0A0B;
-    background-image: url("../images/testimonial-bg.jpg");
+    background-image: url("../images/Castle.jpeg");
     background-repeat: no-repeat;
-    background-position: center, center;
+    background-position: bottom, center;
     padding-top: 9.6rem;
     padding-bottom: 10.2rem;
     color: rgba(255, 255, 255, 0.5);
@@ -2766,17 +2787,6 @@ html.no-csstransitions .home-content__main {
     padding-left: 12rem;
     padding-right: 3rem;
     line-height: 2.063;
-}
-
-.testimonials__slide::before {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 3rem;
-    position: absolute;
-    left: calc(3.3rem + .9rem);
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .testimonials__avatar {

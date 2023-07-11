@@ -827,6 +827,10 @@ input[type="password"], textarea {
     border: none;
 }
 
+.most-width {
+    width: 80%; 
+}
+
 .full-width {
     width: 100%;
 }
